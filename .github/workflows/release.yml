@@ -34,14 +34,10 @@ jobs:
           node-version: '20'
           cache: 'pnpm'
 
-      - name: 📥 Install pnpm
-        with:
-          version: latest
+      - name: 📦 Install dependencies
         run: |
           npm install -g pnpm@latest-8
-
-      - name: 📦 Install dependencies
-        run: pnpm install --frozen-lockfile
+          pnpm install --frozen-lockfile
 
       - name: 🔨 Build
         run: pnpm run build
