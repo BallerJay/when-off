@@ -23,6 +23,7 @@ export default {
           { type: 'refactor', release: 'patch' },
           { type: 'style', release: 'patch' },
           { type: 'chore', scope: 'deps', release: 'patch' },
+          { type: 'package', release: 'patch' },
         ],
         parserOpts: {
           noteKeywords: ['BREAKING CHANGE', 'BREAKING CHANGES', 'BREAKING'],
