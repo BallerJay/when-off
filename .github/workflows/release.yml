@@ -14,6 +14,7 @@ permissions:
   contents: write
   issues: write
   pull-requests: write
+  packages: write
   id-token: write
 
 jobs:
@@ -43,6 +44,6 @@ jobs:
 
       - name: 🚀 Release
         env:
-          PUBLISH_GH_TOKEN: ${{ secrets.PUBLISH_GH_TOKEN }}
-          PUBLISH_NPM_TOKEN: ${{ secrets.PUBLISH_NPM_TOKEN }}
-        run: pnpm run semantic-release:dry-run
+          GITHUB_TOKEN: ${{ secrets.PUBLISH_GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.PUBLISH_NPM_TOKEN }}
+        run: pnpm run semantic-release
