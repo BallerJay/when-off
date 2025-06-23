@@ -1,0 +1,17 @@
+{
+  "eslint.enable": true, // 启用 ESLint 插件对代码的检查功能。
+  "eslint.validate": [
+    // 指定 ESLint 应该对哪些类型的文件进行代码检查
+    "javascript",
+    "typescript"
+  ],
+  "files.autoSave": "onFocusChange", // 焦点离开自动保存代码
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.prettier": "explicit" // 保存时执行eslint --fix
+  },
+  "cSpell.words": [
+    "commitlint",
+    "ianvs"
+  ]
+}

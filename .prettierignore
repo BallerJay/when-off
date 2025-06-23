@@ -1,0 +1,25 @@
+# 构建产物
+dist/
+es/
+lib/
+
+# 依赖锁定文件
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+
+# 配置文件
+.gitignore
+.npmignore
+.prettierignore
+.editorconfig
+.eslintignore
+
+# 临时文件
+*.log
+
+# IDE配置
+.vscode
+.idea
+
+README.md

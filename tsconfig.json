@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // 目标 ES 版本
+    "lib": ["DOM", "ESNext"], // 库
+    "allowJs": true, // 允许导入 JS 文件
+    "module": "ESNext", // 模块
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true, // 强制一致的文件名大小写
+    "declaration": true, // 生成声明文件
+    "jsx": "react-jsx", // 使用 React 的 JSX 实现
+    "resolveJsonModule": true, // 支持导入 JSON 文件
+    "moduleResolution": "node", // 模块解析策略
+    "skipLibCheck": true, // 跳过库文件检查
+    "strict": true, // 启用所有严格类型检查选项
+    "experimentalDecorators": true // 启用实验性装饰器
+  },
+  "include": ["src/**/*", "types/**/*", "data/**/*"],
+  "exclude": ["node_modules", "**/dist/**"]
+}
