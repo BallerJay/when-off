@@ -22,4 +22,9 @@ package-lock.json
 .vscode
 .idea
 
+# 文档
 README.md
+CHANGELOG.md
+
+# 其他
+.husky

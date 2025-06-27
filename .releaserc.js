@@ -30,7 +30,6 @@ export default {
         },
       },
     ],
-
     // 生成 release notes
     [
       '@semantic-release/release-notes-generator',
@@ -59,7 +58,6 @@ export default {
         },
       },
     ],
-
     // 生成 CHANGELOG.md
     [
       '@semantic-release/changelog',
@@ -78,7 +76,6 @@ export default {
         tarballDir: 'dist',
       },
     ],
-
     // 创建 GitHub Release
     [
       '@semantic-release/github',
@@ -86,22 +83,21 @@ export default {
         assets: [
           {
             path: 'dist/**/*',
-            label: 'Distribution files',
+            label: 'dist',
           },
           {
             path: 'es/**/*',
-            label: 'ES modules',
+            label: 'es',
           },
           {
             path: 'lib/**/*',
-            label: 'CommonJS modules',
+            label: 'lib',
           },
         ],
         releasedLabels: ['🎉 released'],
-        addReleases: 'bottom',
+        addReleases: false,
       },
     ],
-
     // 提交生成的文件到 git
     [
       '@semantic-release/git',

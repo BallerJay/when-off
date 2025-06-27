@@ -6,9 +6,12 @@
 
 ## 📖 项目介绍
 
-`when-off` 是一个专注于日期和时间处理的 TypeScript 工具库，并且提供各个国家法定节假日和调休安排信息数据，主要用于：
+`when-off` 是一个专注于日期和时间处理的 TypeScript 工具库，提供全球多个国家的法定节假日和调休安排数据，主要功能包括：
 - 🎉 节假日识别与处理
 - 💼 工作日计算
+- 📅 调休安排查询
+- 📊 节假日统计信息
+- 🌍 多地区数据支持
 
 ## 🚀 安装
 
@@ -50,10 +53,25 @@ const whenOff = new WhenOff();
 const whenOff2025 = new WhenOff('CN', 2025);
 ```
 
+## 数据访问
+
+原始 JSON 文件可通过以下方式访问：
+
+1. unpkg：
+```
+https://unpkg.com/holiday-calendar/data/CN/2025.json
+```
+
+2. jsDelivr CDN：
+```
+https://cdn.jsdelivr.net/npm/when-off/json/CN/2025.json
+```
+
 ### 浏览器直接使用
 
 ```html
-<script src="https://unpkg.com/when-off@latest/dist/index.min.js"></script>
+<script src="https://unpkg.com/when-off"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/when-off" ></script> -->
 <script>
   const whenOff = new WhenOff();
   console.log(whenOff.isHoliday(new Date('2024-01-01')));
@@ -189,30 +207,6 @@ console.log(stats);
 ### 年份支持
 - **2015-2025年**: 完整的法定节假日和调休数据
 
-## 🔧 类型定义
-
-```typescript
-enum RegionEnum {
-  CN = 'CN' // 中国
-}
-
-enum HolidayTypeEnum {
-  PUBLIC_HOLIDAY = 'public_holiday',     // 法定节假日
-  ALTERNATE_WORKDAY = 'alternate_workday' // 调休工作日
-}
-
-interface HolidayInfo {
-  date: string;
-  type: HolidayTypeEnum;
-  name: string;
-}
-
-interface HolidayStats {
-  totalHolidays: number;        // 总节假日天数
-  totalAlternateWorkdays: number; // 总调休工作日天数
-}
-```
-
 ## 💡 使用示例
 
 ### 1. 基础日期判断
@@ -273,15 +267,6 @@ console.log(`🎉 法定节假日: ${stats.totalHolidays} 天`);
 console.log(`🔄 调休工作日: ${stats.totalAlternateWorkdays} 天`);
 ```
 
-## 🛠️ 技术栈
-
-- **语言**: TypeScript 5.8.3
-- **运行时**: Node.js 20.15.0
-- **包管理器**: pnpm
-- **代码风格**: ESLint + Prettier
-- **提交规范**: Commitizen + Commitlint
-- **Git 钩子**: Husky
-
 ## 📦 环境要求
 
 - Node.js >= 20.15.0
@@ -309,50 +294,6 @@ npm install
 yarn install
 ```
 
-### 3. 开发环境准备
-
-项目使用 Volta 管理 Node.js 版本，如果你安装了 Volta，它会自动使用正确的 Node.js 版本。
-
-```bash
-# 如果你使用 Volta
-volta install node@20.15.0
-```
-
-## 📁 项目结构
-
-```
-📦 when-off/
-├── 📂 src/              # 源代码目录
-│   └── index.ts         # 主入口文件
-├── 📂 lib/              # 工具库目录
-│   ├── index.ts         # 库入口文件
-│   └── 📂 data/         # 数据文件目录
-│       └── 2025.ts      # 2025年数据
-├── 📂 types/            # TypeScript 类型定义
-│   ├── index.ts         # 类型导出文件
-│   └── date.ts          # 日期相关类型
-├── 📄 package.json      # 项目配置文件
-├── 📄 tsconfig.json     # TypeScript 配置
-├── 📄 eslint.config.js  # ESLint 配置
-├── 📄 commitlint.config.js # 提交规范配置
-└── 📄 README.md         # 项目说明文档
-```
-
-## 🔧 开发命令
-
-### 代码检查与格式化
-
-```bash
-# 运行 ESLint 检查
-pnpm lint
-
-# 自动修复 ESLint 错误
-pnpm lint:fix
-
-# 使用 Prettier 格式化代码
-pnpm format
-```
-
 ### 代码提交
 
 项目使用 [Conventional Commits](https://www.conventionalcommits.org/) 规范和 Commitizen 工具来标准化提交信息。
@@ -360,23 +301,7 @@ pnpm format
 ```bash
 # 使用交互式提交工具
 pnpm commit
-
-# 或者使用 git-cz
-git add .
-git cz
 ```
-
-### 产物输出
-
-```
-dist/
-├── index.js          # ESM 格式
-├── index.cjs         # CommonJS 格式
-├── index.global.js   # IIFE 格式（浏览器直接使用）
-├── index.d.ts        # TypeScript 类型声明
-└── *.map             # Source maps
-```
-
 ## 📄 许可证
 
 本项目基于 [MIT 许可证](LICENSE) 开源。

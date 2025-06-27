@@ -6,7 +6,15 @@
     "date",
     "calendar",
     "holiday",
-    "workday"
+    "workday",
+    "日历",
+    "节假日",
+    "调休",
+    "工作日",
+    "法定节假日",
+    "调休安排",
+    "工作日安排",
+    "节假日安排"
   ],
   "homepage": "https://github.com/BallerJay/when-off#readme",
   "bugs": {
