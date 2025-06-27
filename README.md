@@ -10,6 +10,269 @@
 - 🎉 节假日识别与处理
 - 💼 工作日计算
 
+## 🚀 安装
+
+### 使用 npm
+
+```bash
+npm install when-off
+```
+
+### 使用 yarn
+
+```bash
+yarn add when-off
+```
+
+### 使用 pnpm
+
+```bash
+pnpm add when-off
+```
+
+### 使用 bun
+
+```bash
+bun add when-off
+```
+
+## 📋 使用方法
+
+### 基本用法
+
+```typescript
+import WhenOff from 'when-off';
+
+// 创建实例，默认为中国地区当前年份
+const whenOff = new WhenOff();
+
+// 指定地区和年份
+const whenOff2025 = new WhenOff('CN', 2025);
+```
+
+### 浏览器直接使用
+
+```html
+<script src="https://unpkg.com/when-off@latest/dist/index.min.js"></script>
+<script>
+  const whenOff = new WhenOff();
+  console.log(whenOff.isHoliday(new Date('2024-01-01')));
+</script>
+```
+
+## 📚 API 参考
+
+### 构造函数
+
+```typescript
+constructor(region?: RegionEnum, year?: number)
+```
+
+**参数：**
+- `region` (可选): 地区代码，默认为 `'CN'`，目前仅支持中国
+- `year` (可选): 年份，默认为当前年份
+
+**示例：**
+```typescript
+const whenOff = new WhenOff(); // 默认中国，当前年份
+const whenOff2024 = new WhenOff('CN', 2024); // 中国，2024年
+```
+
+### 方法
+
+#### `isHoliday(date: Date, region?: string): boolean`
+
+判断指定日期是否为法定节假日。
+
+**参数：**
+- `date`: 要检查的日期
+- `region` (可选): 地区代码，默认使用实例创建时的地区
+
+**返回值：**
+- `boolean`: 如果是法定节假日返回 `true`，否则返回 `false`
+
+**示例：**
+```typescript
+const whenOff = new WhenOff();
+
+// 检查2024年1月1日是否为节假日
+console.log(whenOff.isHoliday(new Date('2024-01-01'))); // true
+
+// 检查2024年1月2日是否为节假日
+console.log(whenOff.isHoliday(new Date('2024-01-02'))); // false
+```
+
+#### `isWorkingDay(date: Date): boolean`
+
+判断指定日期是否为工作日。
+
+**参数：**
+- `date`: 要检查的日期
+
+**返回值：**
+- `boolean`: 如果是工作日返回 `true`，否则返回 `false`
+
+**示例：**
+```typescript
+const whenOff = new WhenOff();
+
+// 检查2024年1月2日是否为工作日
+console.log(whenOff.isWorkingDay(new Date('2024-01-02'))); // true
+
+// 检查2024年1月1日是否为工作日（元旦）
+console.log(whenOff.isWorkingDay(new Date('2024-01-01'))); // false
+```
+
+#### `isAlternateWorkDay(date: Date, region?: string): boolean`
+
+判断指定日期是否为调休工作日。
+
+**参数：**
+- `date`: 要检查的日期
+- `region` (可选): 地区代码，默认使用实例创建时的地区
+
+**返回值：**
+- `boolean`: 如果是调休工作日返回 `true`，否则返回 `false`
+
+**示例：**
+```typescript
+const whenOff = new WhenOff();
+
+// 检查某个周末是否为调休工作日
+console.log(whenOff.isAlternateWorkDay(new Date('2024-02-04'))); // true (春节调休)
+```
+
+#### `getDateInfo(date: Date, region?: string): HolidayInfo | undefined`
+
+获取指定日期的节假日相关信息。
+
+**参数：**
+- `date`: 要查询的日期
+- `region` (可选): 地区代码，默认使用实例创建时的地区
+
+**返回值：**
+- `HolidayInfo | undefined`: 节假日信息对象，如果该日期没有特殊信息则返回 `undefined`
+
+**示例：**
+```typescript
+const whenOff = new WhenOff();
+
+const info = whenOff.getDateInfo(new Date('2024-01-01'));
+console.log(info);
+// 输出: { date: '2024-01-01', type: 'public_holiday', name: '元旦' }
+```
+
+#### `getHolidayStats(region?: string): HolidayStats | undefined`
+
+获取指定年份的节假日统计信息。
+
+**参数：**
+- `region` (可选): 地区代码，默认使用实例创建时的地区
+
+**返回值：**
+- `HolidayStats | undefined`: 统计信息对象，包含节假日和调休工作日的总数
+
+**示例：**
+```typescript
+const whenOff = new WhenOff();
+
+const stats = whenOff.getHolidayStats();
+console.log(stats);
+// 输出: { totalHolidays: 11, totalAlternateWorkdays: 8 }
+```
+
+## 🗓️ 支持的数据范围
+
+### 地区支持
+- 🇨🇳 **中国 (CN)**: 2015-2025年完整数据
+
+### 年份支持
+- **2015-2025年**: 完整的法定节假日和调休数据
+
+## 🔧 类型定义
+
+```typescript
+enum RegionEnum {
+  CN = 'CN' // 中国
+}
+
+enum HolidayTypeEnum {
+  PUBLIC_HOLIDAY = 'public_holiday',     // 法定节假日
+  ALTERNATE_WORKDAY = 'alternate_workday' // 调休工作日
+}
+
+interface HolidayInfo {
+  date: string;
+  type: HolidayTypeEnum;
+  name: string;
+}
+
+interface HolidayStats {
+  totalHolidays: number;        // 总节假日天数
+  totalAlternateWorkdays: number; // 总调休工作日天数
+}
+```
+
+## 💡 使用示例
+
+### 1. 基础日期判断
+
+```typescript
+import WhenOff from 'when-off';
+
+const whenOff = new WhenOff();
+
+// 判断今天是否为节假日
+const today = new Date();
+if (whenOff.isHoliday(today)) {
+  console.log('🎉 今天是节假日，好好休息！');
+} else if (whenOff.isWorkingDay(today)) {
+  console.log('💼 今天是工作日，加油工作！');
+}
+```
+
+### 2. 批量日期处理
+
+```typescript
+import WhenOff from 'when-off';
+
+const whenOff = new WhenOff();
+
+// 检查一周内的日期
+const dates = [
+  new Date('2024-01-01'),
+  new Date('2024-01-02'),
+  new Date('2024-01-03'),
+];
+
+dates.forEach(date => {
+  const dateStr = date.toISOString().split('T')[0];
+  if (whenOff.isHoliday(date)) {
+    console.log(`📅 ${dateStr} 是节假日`);
+  } else if (whenOff.isAlternateWorkDay(date)) {
+    console.log(`🔄 ${dateStr} 是调休工作日`);
+  } else if (whenOff.isWorkingDay(date)) {
+    console.log(`💼 ${dateStr} 是工作日`);
+  } else {
+    console.log(`🌟 ${dateStr} 是周末`);
+  }
+});
+```
+
+### 3. 统计信息查询
+
+```typescript
+import WhenOff from 'when-off';
+
+const whenOff = new WhenOff('CN', 2024);
+
+// 获取2024年节假日统计
+const stats = whenOff.getHolidayStats();
+console.log(`📊 2024年统计：`);
+console.log(`🎉 法定节假日: ${stats.totalHolidays} 天`);
+console.log(`🔄 调休工作日: ${stats.totalAlternateWorkdays} 天`);
+```
+
 ## 🛠️ 技术栈
 
 - **语言**: TypeScript 5.8.3
