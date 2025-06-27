@@ -5,6 +5,13 @@
 该项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
 
+# [1.1.0](https://github.com/BallerJay/when-off/compare/v1.0.0...v1.1.0) (2025-06-27)
+
+
+### Features
+
+* :sparkles: 增加WhenOff类和JSON文件 ([a24adea](https://github.com/BallerJay/when-off/commit/a24adeacc9e0c062cf29ef9764ddde05ae6f3dc7))
+
 # 1.0.0 (2025-06-23)
 
 

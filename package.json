@@ -1,6 +1,6 @@
 {
   "name": "when-off",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "一个用于处理日期、日历、节假日和工作日的 TypeScript 工具库, 并且提供各个国家法定节假日和调休安排信息数据",
   "keywords": [
     "date",
