@@ -19,28 +19,28 @@
   "license": "ISC",
   "author": "Jay",
   "type": "module",
-  "main": "lib/index.cjs",
-  "module": "es/index.js",
-  "browser": "dist/index.min.js",
-  "types": "es/index.d.ts",
-  "unpkg": "dist/index.min.js",
   "exports": {
     ".": {
       "import": "./es/index.js",
-      "require": "./lib/index.cjs"
+      "require": "./lib/index.js",
+      "types": "./es/index.d.ts"
     }
   },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "browser": "dist/index.js",
+  "types": "es/index.d.ts",
   "files": [
     "es",
     "lib",
-    "dist",
-    "json"
+    "dist"
   ],
   "scripts": {
     "build": "tsup",
+    "build:prod": "NODE_ENV=production tsup",
     "commit": "git-cz",
     "commitlint": "commitlint",
-    "dev": "bun --watch test/index.test.ts",
+    "dev": "NODE_ENV=development tsup",
     "format": "prettier --write .",
     "lint": "eslint .",
     "lint-staged": "lint-staged",

@@ -12,11 +12,8 @@
     "moduleResolution": "node", // 模块解析策略
     "skipLibCheck": true, // 跳过库文件检查
     "strict": true, // 启用所有严格类型检查选项
-    "experimentalDecorators": true, // 启用实验性装饰器
-    "paths": {
-      "@json/*": ["./json/*"]
-    }
+    "experimentalDecorators": true // 启用实验性装饰器
   },
-  "include": ["src/**/*", "enums/**/*", "data/**/*", "test/**/*"],
+  "include": ["src/**/*", "types/**/*", "data/**/*"],
   "exclude": ["node_modules", "**/dist/**"]
 }
