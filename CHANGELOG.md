@@ -5,6 +5,13 @@
 该项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
 
+## [1.1.1](https://github.com/BallerJay/when-off/compare/v1.1.0...v1.1.1) (2025-07-18)
+
+
+### Bug Fixes
+
+* 🐛 (ci): 测试 ([ee723c2](https://github.com/BallerJay/when-off/commit/ee723c2d2613fb8bbe284346128569cdb7784891))
+
 # [1.1.0](https://github.com/BallerJay/when-off/compare/v1.0.0...v1.1.0) (2025-06-27)
 
 
