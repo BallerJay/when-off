@@ -19,10 +19,10 @@ export default {
         releaseRules: [
           { type: 'feat', release: 'minor' },
           { type: 'fix', release: 'patch' },
-          { type: 'docs', scope: 'README', release: 'patch' },
+          { type: 'docs', release: 'patch' },
           { type: 'refactor', release: 'patch' },
           { type: 'style', release: 'patch' },
-          { type: 'chore', scope: 'deps', release: 'patch' },
+          { type: 'chore', release: 'patch' },
           { type: 'build', release: 'patch' },
         ],
         parserOpts: {
@@ -80,21 +80,21 @@ export default {
     [
       '@semantic-release/github',
       {
-        assets: [
-          {
-            path: 'dist/**/*',
-            label: 'dist',
-          },
-          {
-            path: 'es/**/*',
-            label: 'es',
-          },
-          {
-            path: 'lib/**/*',
-            label: 'lib',
-          },
-        ],
-        releasedLabels: ['🎉 released'],
+        // assets: [
+        //   {
+        //     path: 'dist/**/*',
+        //     label: 'dist',
+        //   },
+        //   {
+        //     path: 'es/**/*',
+        //     label: 'es',
+        //   },
+        //   {
+        //     path: 'lib/**/*',
+        //     label: 'lib',
+        //   },
+        // ],
+        releasedLabels: ['🎉 released111'],
         addReleases: false,
       },
     ],
