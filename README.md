@@ -59,7 +59,7 @@ const whenOff2025 = new WhenOff('CN', 2025);
 
 1. unpkg：
 ```
-https://unpkg.com/holiday-calendar/data/CN/2025.json
+https://unpkg.com/when-off/json/CN/2025.json
 ```
 
 2. jsDelivr CDN：
