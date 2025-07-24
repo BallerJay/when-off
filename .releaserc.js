@@ -94,7 +94,7 @@ export default {
         //     label: 'lib',
         //   },
         // ],
-        releasedLabels: ['🎉 released111'],
+        releasedLabels: ['🎉 released'],
         addReleases: false,
       },
     ],
