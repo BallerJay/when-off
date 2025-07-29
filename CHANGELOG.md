@@ -5,6 +5,13 @@
 该项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
 
+# [1.3.0](https://github.com/BallerJay/when-off/compare/v1.2.0...v1.3.0) (2025-07-29)
+
+
+### Features
+
+* ✨ 新增festival_holiday类型 ([aabab06](https://github.com/BallerJay/when-off/commit/aabab06fc37f44df5bef616146b69ea236eaa83e))
+
 # [1.2.0](https://github.com/BallerJay/when-off/compare/v1.1.0...v1.2.0) (2025-07-24)
 
 
