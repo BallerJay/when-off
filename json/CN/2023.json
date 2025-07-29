@@ -14,7 +14,7 @@
       "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2023-01-02",
@@ -25,17 +25,17 @@
     },
     {
       "date": "2023-01-21",
-      "name": "春节",
-      "name_cn": "春节",
-      "name_en": "Spring Festival",
-      "type": "public_holiday"
+      "name": "除夕",
+      "name_cn": "除夕",
+      "name_en": "Spring Festival Eve",
+      "type": "festival_holiday"
     },
     {
       "date": "2023-01-22",
       "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2023-01-23",
@@ -91,7 +91,7 @@
       "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-sweeping Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2023-04-23",
@@ -119,7 +119,7 @@
       "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2023-05-02",
@@ -147,7 +147,7 @@
       "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2023-06-23",
@@ -172,72 +172,72 @@
     },
     {
       "date": "2023-09-29",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
-      "type": "public_holiday"
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "festival_holiday"
     },
     {
       "date": "2023-09-30",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-01",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
-      "type": "public_holiday"
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "festival_holiday"
     },
     {
       "date": "2023-10-02",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-03",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-04",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-05",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-06",
-      "name": "中秋节和国庆节",
-      "name_cn": "中秋节和国庆节",
-      "name_en": "Mid-Autumn Festival & National Day",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
+      "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2023-10-07",
-      "name": "中秋节和国庆节补班",
-      "name_cn": "中秋节和国庆节补班",
-      "name_en": "Mid-Autumn Festival & National Day Workday",
+      "name": "国庆节和中秋节补班",
+      "name_cn": "国庆节和中秋节补班",
+      "name_en": "National Day & Mid-Autumn Festival Workday",
       "type": "alternate_workday"
     },
     {
       "date": "2023-10-08",
-      "name": "中秋节和国庆节补班",
-      "name_cn": "中秋节和国庆节补班",
-      "name_en": "Mid-Autumn Festival & National Day Workday",
+      "name": "国庆节和中秋节补班",
+      "name_cn": "国庆节和中秋节补班",
+      "name_en": "National Day & Mid-Autumn Festival Workday",
       "type": "alternate_workday"
     }
   ]

@@ -7,7 +7,7 @@
       "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-01-02",
@@ -39,17 +39,17 @@
     },
     {
       "date": "2022-01-31",
-      "name": "春节",
-      "name_cn": "春节",
-      "name_en": "Spring Festival",
-      "type": "public_holiday"
+      "name": "除夕",
+      "name_cn": "除夕",
+      "name_en": "Spring Festival Eve",
+      "type": "festival_holiday"
     },
     {
       "date": "2022-02-01",
       "name": "春节",
       "name_cn": "春节",
       "name_en": "Spring Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-02-02",
@@ -112,7 +112,7 @@
       "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-sweeping Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-04-24",
@@ -133,7 +133,7 @@
       "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labour Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-05-02",
@@ -168,7 +168,7 @@
       "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-06-04",
@@ -189,7 +189,7 @@
       "name": "中秋节",
       "name_cn": "中秋节",
       "name_en": "Mid-Autumn Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-09-11",
@@ -210,7 +210,7 @@
       "name": "国庆节",
       "name_cn": "国庆节",
       "name_en": "National Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2022-10-02",

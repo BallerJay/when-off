@@ -7,7 +7,7 @@
       "name": "元旦",
       "name_cn": "元旦",
       "name_en": "New Year's Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2025-01-26",
@@ -18,17 +18,17 @@
     },
     {
       "date": "2025-01-28",
-      "name": "春节",
-      "name_cn": "春节",
-      "name_en": "Chinese New Year",
-      "type": "public_holiday"
+      "name": "除夕",
+      "name_cn": "除夕",
+      "name_en": "Spring Festival Eve",
+      "type": "festival_holiday"
     },
     {
       "date": "2025-01-29",
       "name": "春节",
       "name_cn": "春节",
       "name_en": "Chinese New Year",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2025-01-30",
@@ -84,7 +84,7 @@
       "name": "清明节",
       "name_cn": "清明节",
       "name_en": "Tomb-Sweeping Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2025-04-05",
@@ -112,7 +112,7 @@
       "name": "劳动节",
       "name_cn": "劳动节",
       "name_en": "Labor Day",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2025-05-02",
@@ -147,14 +147,14 @@
       "name": "端午节",
       "name_cn": "端午节",
       "name_en": "Dragon Boat Festival",
-      "type": "public_holiday"
+      "type": "festival_holiday"
     },
     {
       "date": "2025-06-01",
-      "name": "端午节",
-      "name_cn": "端午节",
-      "name_en": "Dragon Boat Festival",
-      "type": "public_holiday"
+      "name": "儿童节",
+      "name_cn": "儿童节",
+      "name_en": "Children's Day",
+      "type": "festival_holiday"
     },
     {
       "date": "2025-06-02",
@@ -172,57 +172,57 @@
     },
     {
       "date": "2025-10-01",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
-      "name_en": "National Day & Mid-Autumn Festival",
-      "type": "public_holiday"
+      "name": "国庆节",
+      "name_cn": "国庆节",
+      "name_en": "National Day",
+      "type": "festival_holiday"
     },
     {
       "date": "2025-10-02",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2025-10-03",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2025-10-04",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2025-10-05",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2025-10-06",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
-      "name_en": "National Day & Mid-Autumn Festival",
-      "type": "public_holiday"
+      "name": "中秋节",
+      "name_cn": "中秋节",
+      "name_en": "Mid-Autumn Festival",
+      "type": "festival_holiday"
     },
     {
       "date": "2025-10-07",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },
     {
       "date": "2025-10-08",
-      "name": "国庆节、中秋节",
-      "name_cn": "国庆节、中秋节",
+      "name": "国庆节和中秋节",
+      "name_cn": "国庆节和中秋节",
       "name_en": "National Day & Mid-Autumn Festival",
       "type": "public_holiday"
     },

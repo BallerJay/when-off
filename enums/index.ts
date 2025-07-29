@@ -8,6 +8,8 @@ export enum RegionEnum {
  */
 export enum HolidayTypeEnum {
   /** 法定节假日 */
+  FESTIVAL_HOLIDAY = 'festival_holiday',
+  /** 法定节假日 */
   PUBLIC_HOLIDAY = 'public_holiday',
   /** 调休工作日 */
   ALTERNATE_WORKDAY = 'alternate_workday',

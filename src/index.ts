@@ -41,7 +41,11 @@ class WhenOff {
     }
 
     const holiday = data.dates.find(
-      (item) => item.date === dateStr && item.type === HolidayTypeEnum.PUBLIC_HOLIDAY,
+      (item) =>
+        item.date === dateStr &&
+        [HolidayTypeEnum.FESTIVAL_HOLIDAY, HolidayTypeEnum.PUBLIC_HOLIDAY].includes(
+          item.type as HolidayTypeEnum,
+        ),
     );
 
     return !!holiday;
@@ -109,7 +113,11 @@ class WhenOff {
       return;
     }
 
-    const holidays = data.dates.filter((item) => item.type === HolidayTypeEnum.PUBLIC_HOLIDAY);
+    const holidays = data.dates.filter((item) =>
+      [HolidayTypeEnum.FESTIVAL_HOLIDAY, HolidayTypeEnum.PUBLIC_HOLIDAY].includes(
+        item.type as HolidayTypeEnum,
+      ),
+    );
     const alternateWorkdays = data.dates.filter(
       (item) => item.type === HolidayTypeEnum.ALTERNATE_WORKDAY,
     );
