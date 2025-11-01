@@ -22,6 +22,7 @@ export default tseslint.config([
       // 📄 其他文件
       'pnpm-lock.yaml',
       '*.log',
+      'json/demo/**',
     ],
   },
   {
