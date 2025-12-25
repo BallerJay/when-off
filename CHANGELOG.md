@@ -5,6 +5,13 @@
 该项目遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
 
+# [1.4.0](https://github.com/BallerJay/when-off/compare/v1.3.1...v1.4.0) (2025-12-25)
+
+
+### Features
+
+* ✨ 增加2026节假日数据 ([a73af1a](https://github.com/BallerJay/when-off/commit/a73af1a012f3f78f5d0a5d4617dc0507df8cf9a2))
+
 ## [1.3.1](https://github.com/BallerJay/when-off/compare/v1.3.0...v1.3.1) (2025-11-01)
 
 
